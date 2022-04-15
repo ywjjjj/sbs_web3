@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>타이머 함수 - 시계</title>
+    <script>
+        setInterval( () => {
+            // 날짜/시간 객체 생성
+            let timer = new Date()
+            let h = timer.getHours()    // 현재 시간
+            let m = timer.getMinutes()  // 현재 분
+            let s = timer.getSeconds()  // 현재 초
+            let time = `${h} : ${m} : ${s}`
+            console.log(time);
+            // id="time"인 요소를 선택
+            // innerHTML: 해당 요소의 내부 HTML
+            document.getElementById('time').innerHTML = time
+        }, 1000)
+    </script>
+</head>
+<body>
+    <h1 id="time"></h1>
+</body>
+</html>
