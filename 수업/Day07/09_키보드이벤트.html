@@ -13,24 +13,23 @@
             const print = (event) => {
                 /* TODO - 여기에 작성o_O */
                 let output = ''
-                output += `alt: ${event.altKey}<br>`
-                output += `ctrl: ${event.ctrlKey}<br>`
-                output += `shift: ${event.shiftKey}<br>`
-                output += `KeyCode: ${event.keyCode}<br>`
+                output += `alt : ${event.altKey}<br>`
+                output += `ctrl : ${event.ctrlKey}<br>`
+                output += `shift : ${event.shiftKey}<br>`
+                output += `KeyCode : ${event.keyCode}<br>`
                 h1.innerHTML = output
 
                 // ctrl + C
                 /* TODO - 여기에 작성o_O */
-                if(event.ctrlKey && event.keyCode==67) {
+                if( event.ctrlKey && event.keyCode == 67 ) {
                     alert('이 페이지에서는 복사할 수 없습니다.')
                 }
 
-
                 // ctrl + space
                 /* TODO - 여기에 작성o_O */
-                if(event.ctrlKey && event.keyCode==32) {
+                if( event.ctrlKey && event.keyCode == 32 ) {
                     // 네이버로 이동
-                    location.href='http://www.naver.com'
+                    location.href = 'https://www.naver.com'
                 }
 
             }
