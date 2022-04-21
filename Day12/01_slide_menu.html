@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>슬라이드 메뉴</title>
+    <!-- css -->
+    <link rel="stylesheet" href="css/01_slide_menu.css">
+    
+    <!-- js -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script></script>
+    <script src="js/01_slide_menu.js"></script>
+
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <a href="#" class="logo"><img src="img/logo.png" alt=""></a>
+
+            <nav>
+                <ul>
+                    <li class="mainmenu">
+                        <a href="#">메인메뉴 01</a>
+                        <div class="submenu"></div> <!-- 메인01 서브메뉴 -->
+                    </li>
+                    <li class="mainmenu">
+                        <a href="#">메인메뉴 02</a>
+                        <div class="submenu"></div> <!-- 메인02 서브메뉴 -->
+                    </li>
+                    <li class="mainmenu">
+                        <a href="#">메인메뉴 03</a>
+                        <div class="submenu"></div> <!-- 메인03 서브메뉴 -->
+                    </li>
+                    <li class="mainmenu">
+                        <a href="#">메인메뉴 04</a>
+                        <div class="submenu"></div> <!-- 메인04 서브메뉴 -->
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- 햄버거 메뉴 -->
+            <div class="slide-open">
+                <span class="top"></span>
+                <span class="mid"></span>
+                <span class="bottom"></span>
+            </div>
+        </header>
+
+        <!-- 슬라이드 바 -->
+        <div class="slide">
+            <!-- X 버튼 -->
+            <span class="cancel"></span>
+        </div>
+
+        <!-- 슬라이드 바 바깥영역(어두운 배경) -->
+        <span class="bg"></span>
+        
+    </div>
+</body>
+</html>

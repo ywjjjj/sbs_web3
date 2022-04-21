@@ -25,7 +25,14 @@ $(function() {
     $('.mainmenu').on('click', function() {
         let index = $(this).index()
         let no = index + 1
-        $('.submenu').stop().hide()
+
+        // 선택한 메인메뉴에 'active' 클래스 추가
+        $('.submenu').removeClass('active')
+        $('.submenu').eq(index).addClass('active') // 현재 선택 요소에 active class 추가
+
+        // 'active' 클래스를 제외하고 모두 숨김
+        $('.submenu').not('.active').stop().hide()
+        // 클릭 메뉴만 슬라이드 전환
         $('.submenu').eq(index).stop().slideToggle()
     })
 })
