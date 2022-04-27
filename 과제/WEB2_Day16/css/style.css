@@ -1,0 +1,258 @@
+
+wrap {}
+
+/* 영역 확인을 위한 border */
+/* header, section, footer {border: 1px solid black;} */
+
+/* 공통 */
+.inner-box {width: 1200px; margin: 0 auto;}
+/* 모바일에서만 보여질 요소 */
+.mobile {display: none;}
+
+
+/* flex */
+.flex {display: flex;}
+.flex.flex-start {justify-content: flex-start;}
+.flex.flex-end {justify-content: flex-end;}
+.flex.flex-center {justify-content: center;}
+.flex.flex-between {justify-content: space-between;}
+.flex.flex-around {justify-content: space-around;}
+.flex.align-center {align-content: center;}
+.flex.align-items-center {align-items: center;}
+.flex.flex-wrap {flex-wrap: wrap;}
+
+/* 헤더 */
+.header {position: sticky; top: 0; z-index: 100;}
+.header .user {height: 50px; /* border: 1px solid black; */}
+.header .user .util li {margin-right: 15px;}
+.header .user {
+    background: url(../img/logo.png) no-repeat center;
+    background-size: contain;
+}
+
+.header .info {height: 80px; /* border: 1px solid black; */}
+/* .header .info h1 {width: 20%; height: 100%; border: 1px solid black;} */
+.header .info h1 {visibility: hidden;}
+.header .info .gnb li {
+    display: block; float: left; margin-right: 30px; text-align: center;
+}
+.header .info .gnb > li:last-child {
+    margin-right: 15px;
+}
+
+.gnb li .sub{width: 80px;}
+.gnb li .submenu {display: none;}
+.gnb li:hover .submenu {
+    display: flex; flex-direction: column; position: absolute;
+    top: 140px; text-align: center;
+    text-align: center;
+    line-height: 2;
+}
+
+/* 섹션 */
+section {min-height: 100px;}
+
+section.visual .inner {
+    background: url(../img/Jo-Malone-‘English-Pear-Freesia-Cologne-Review-perfume-cologne-2021.jpg) no-repeat;
+    background-size: 100%;
+    background-position-y: -55px;
+    height: 500px;
+    /* border: 3px solid orange; */
+}
+
+/* section.visual .inner-box .title-content {
+    width: 45%; height: 300px; border: 1px solid red;
+}
+
+section.visual .inner-box .main-img {
+    width: 45%; height: 300px; border: 1px solid blue;
+} */
+
+/* 타이틀 */
+section .section-title {height: 100px; margin-top: 100px;}
+section .section-title h2 {font-size: 2.4rem;}
+
+/* 카테고리 영역 */
+section .section-cate {
+    height: 200px;
+    /* border: 1px solid black; */
+}
+
+section .section-cate .inner {
+    /* width: 80%; */
+    height: auto;
+    /* border: 1px solid black; */
+}
+
+section .section-cate .inner span {
+    display: inline-block;
+    padding: 15px 30px;
+    /* margin-right: 20px; */
+    margin-bottom: 15px;
+    /* box-shadow: 0 10px 10px rgba(0,0,0,0.25); */
+}
+
+/* 섹션 - 상품목록 */
+.product-list {}
+.product-list .inner {margin: 0 auto; width: 98%;}
+.product-list .card {
+    width: calc(92%/4);
+    margin: 1%;
+    box-shadow: 0 0px 8px rgba(0,0,0,0.04);
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: #fdfdfd;
+}
+.product-list .card img {width: 100%; aspect-ratio: 1/1; object-fit: cover;}
+.product-list .card .card-content {padding: 20px;}
+.product-list .card .card-content h2 {margin: 5px 0;}
+.product-list .card .card-content p {margin-bottom: 10px;}
+.product-list .card .card-content p.discount span.throw {
+    text-decoration: line-through;
+}
+.product-list .card .card-content p.discount span.percent {
+    background-color: red; color: white;
+    font-weight: border; padding: 0 5px;
+}
+.product-list .card .card-content p.price {
+    margin-bottom: 10px; color: red; font-weight: bolder;
+}
+.product-list .card .card-content p.colors {}
+.product-list .card .card-content p.colors span {
+    display: inline-block; width: 12px; height: 12px; border-radius: 50%;
+    border: 1px solid #eee;
+}
+
+.product-list .card .card-content p.colors span.red {background-color: red;}
+.product-list .card .card-content p.colors span.blue {background-color: blue;}
+.product-list .card .card-content p.colors span.green {background-color: green;}
+.product-list .card .card-content p.colors span.yellow {background-color: yellow;}
+.product-list .card .card-content p.colors span.purple {background-color: purple;}
+.product-list .card .card-content p.colors span.hothotpink {background-color:hotpink;}
+
+.product-list .card .card-content .sizes {color: white;}
+.product-list .card .card-content .sizes .on {
+    background-color: royalblue;
+    display: inline-block;
+    width: 20px; height: 20px;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+.product-list .card .card-content .sizes .off {
+    background-color: gray;
+    display: inline-block;
+    width: 20px; height: 20px;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+/* 섹션 - 기타 */
+section.etc {}
+section.etc .box {
+    height: 400px; border: 1px solid black;
+}
+section.etc .box .col {
+    width: 30%; height: 100%; border: 1px solid hotpink;
+}
+
+/* 푸터 */
+footer {min-height: 200px;}
+footer .fnb {height: 100px; border: 1px solid black;}
+footer .fnb ul li {font-size: 0.8rem;}
+footer .fnb ul li a {margin: 0 20px;}
+footer .box {
+    margin: 0 auto; width: 90%; height: 300px;
+    border: 1px solid brown;
+}
+footer .box .col {
+    width: 33%; height: 100%; border: 1px solid firebrick;
+}
+footer .box .col ul {height: 100%;}
+
+
+/* 반응형 */
+
+/* PC (Big) */
+/* ~1800px */
+
+/* PC */
+/* 1200px~1799px */
+@media screen and (max-width: 1799px) {}
+
+/* 태블릿 (가로) */
+/* 900px ~ 1199px */
+@media screen and (max-width: 1199px) {
+    /* 전체영역 */
+    .inner-box {width: 80%;}
+
+    /* 태블릿/모바일 로고 */
+    .header .info h1 {width: 40%;}
+
+    /* 상품 목록 - 3개 */
+    .product-list {width: 80%;}
+    .product-list .card {width: calc(94%/3);}
+
+}
+
+/* 모바일 (가로) 태블릿 (세로 */
+/* 600px ~ 899px */
+@media screen and (max-width: 899px) {
+    /* 전체 영역 */
+    .inner-box {width: 100%;}
+
+    /* PC / 모바일 전환 */
+    .pc {display: none;}
+    .mobile {display: block;}
+
+    /* 모바일 햄버거 메뉴 */
+    .mobile-gnb-box {padding: 20px; font-size: 40px;}
+
+    /* 섹션: visual */
+    section.visual .title {display: block;}
+    section.visual .inner-box {display: block;}
+    section.visual .inner-box .title-content {width: 100%;}
+    section.visual .inner-box .main-img {width: 100%;}
+
+    /* 카테고리 */
+    section .section-cate .inner span {
+        padding: 10px 25px;
+        margin-right: 15px;
+        margin-bottom: 10px;
+    }
+
+    section .section-title h2 {
+        font-size: 1.4rem;
+    }
+    
+    /* 섹션: 상품목록 - 2개 */
+    .product-list {width: 100%;}
+    .product-list .card {width: calc(96%/2);}
+
+    /* 섹션: 기타 */
+    section.etc .box {display: block;}
+    section.etc .box .col.left,
+    section.etc .box .col.right {
+        float: left; width: 50%; height: 150px;
+    }
+
+    section.etc .box .col.bottom {
+        display: block;
+        clear: both;
+        width: 100%;
+        height: 250px;
+    }
+
+    /* 푸터 */
+    footer .box {flex-direction: column;}
+    footer .box .col {width: 100%;}
+}
+
+/* 모바일 (가로) 태블릿 (세로 */
+/* ~599px */
+@media screen and (max-width: 599px) {
+    /* 섹션: 상품목록 - 2개 */
+    .product-list {width: 100%;}
+    .product-list .card {width: calc(94%/1); margin-left: 3.5%;}
+}
+
