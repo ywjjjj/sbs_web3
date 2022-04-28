@@ -98,9 +98,11 @@ section .section-cate .inner span {
 .product-list .card {
     width: calc(92%/4);
     margin: 1%;
+    margin-bottom: 5%;
     box-shadow: 0 0px 8px rgba(0,0,0,0.04);
-    font-family: 'Noto Sans KR', sans-serif;
-    background-color: #fdfdfd;
+    font-family: 'Noto Serif KR', serif;
+    font-size: small;
+    background-color: #fff;
 }
 .product-list .card img {width: 100%; aspect-ratio: 1/1; object-fit: cover;}
 .product-list .card .card-content {padding: 20px;}
@@ -150,25 +152,44 @@ section .section-cate .inner span {
 /* 섹션 - 기타 */
 section.etc {}
 section.etc .box {
-    height: 400px; border: 1px solid black;
+    /* position: relative; */
+    margin-top: 140px;
+    height: 185px;
+    /* border: 1px solid black; */
 }
 section.etc .box .col {
-    width: 30%; height: 100%; border: 1px solid hotpink;
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid hotpink; */
+    background: url(../img/JoMalone_Logo.jpg) no-repeat center;
+    background-size: contain;
 }
 
 /* 푸터 */
-footer {min-height: 200px;}
-footer .fnb {height: 100px; border: 1px solid black;}
-footer .fnb ul li {font-size: 0.8rem;}
-footer .fnb ul li a {margin: 0 20px;}
-footer .box {
+footer {
+    min-height: 150px;
+}
+footer .fnb {
+    height: 200px;
+    /* border: 1px solid black; */
+}
+footer .fnb ul li {font-size: 0.8rem; margin-top: 50px;}
+footer .fnb ul li a {margin: 0 13px;}
+
+.color {
+    background-color: rgba(167, 161, 154, 0.266);
+    height: 50px;
+    width: 100%;
+}
+
+/* footer .box {
     margin: 0 auto; width: 90%; height: 300px;
     border: 1px solid brown;
 }
 footer .box .col {
     width: 33%; height: 100%; border: 1px solid firebrick;
 }
-footer .box .col ul {height: 100%;}
+footer .box .col ul {height: 100%;} */
 
 
 /* 반응형 */
