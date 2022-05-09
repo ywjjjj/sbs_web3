@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형 웹페이지 만들기</title>
+    <!-- font awesome (아이콘) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- css  -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 전체 영역 -->
+    <div class="wrap">
+
+
+        <!-- 헤더 -->
+        <header>
+            <!-- 로고 -->
+            <h1 id="gnb-logo">
+                <a href="https://sbsart.com/">SBS아카데미컴퓨터아트학원</a>
+            </h1>
+
+
+            <!-- GNB -->
+            <nav>
+                <ul class="gnb">
+                    <li><a href="#">메뉴 1</a></li>
+                    <li><a href="#">메뉴 2</a></li>
+                    <li><a href="#">메뉴 3</a></li>
+                    <li><a href="#">메뉴 4</a></li>
+                </ul>
+            </nav>
+            <!-- 카테고리 -->
+            <div class="category">
+                <label for="category" class="btn">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                    카테고리
+                </label>
+            </div>
+            <!-- 모바일 햄버거 버튼 -->
+            <div class="mb-category">
+                <label for="category" class="mb-btn">
+                    <i class="fa fa-bars fa-lg" aria-hidden="true"></i>               
+                </label>
+            </div>
+        </header>
+
+
+        <!-- 사이드바 -->
+        <input type="checkbox" id="category" name="category" />
+        <div class="sidebar">
+            <div class="inner">
+                <a href="#">사이드 메뉴 1</a>
+                <a href="#">사이드 메뉴 2</a>
+                <a href="#">사이드 메뉴 3</a>
+                <a href="#">사이드 메뉴 4</a>
+            </div>
+            <!-- X 버튼 -->
+            <label for="category" class="close">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </label>
+        </div>
+
+
+        <!-- 섹션 - 슬라이드 -->
+        <section class="slide">
+            <div class="inner">
+                <ul>
+                    <li><img src="img/slide01.jpg" alt="슬라이드01"></li>
+                    <li><img src="img/slide02.jpg" alt="슬라이드02"></li>
+                    <li><img src="img/slide03.jpg" alt="슬라이드03"></li>
+                </ul>
+            </div>
+        </section>
+
+
+        <!-- 섹션 - 컨텐츠 -->
+        <section class="contents">
+            <!-- 타이틀 -->
+            <div class="title">
+                <h2>About Academy<span>!</span></h2>
+                <p>디자인 및 컴퓨터 교육의 리더, <br class="mo"> SBS 아카데미를 소개합니다.</p>
+            </div>
+
+
+            <!-- 3컬럼 영역 -->
+            <ul>
+                <li>
+                    <a href="#">
+                        <p class="img"><img src="img/about01.jpg" alt="교육소개"></p>
+                        <div class="text">
+                            <h3>디자인 과정</h3>
+                            <p>포토샵 부터 제품 디자인 까지</p>
+                            <p class="more">
+                                <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                                more
+                            </p>
+
+
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p class="img"><img src="img/about02.jpg" alt="교육소개"></p>
+                        <div class="text">
+                            <h3>프로그래밍 과정</h3>
+                            <p>파이썬 부터 JAVA 프로그래밍 까지</p>
+                            <p class="more">
+                                <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                                more
+                            </p>
+
+
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p class="img"><img src="img/about03.jpg" alt="교육소개"></p>
+                        <div class="text">
+                            <h3>자격증 과정</h3>
+                            <p>웹 디자인 기능사부터 컴퓨터그래픽스 운용기능사 까지</p>
+                            <p class="more">
+                                <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                                more
+                            </p>
+
+
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+
+        <!-- 섹션 - 서비스 -->
+        <section class="service">
+            <!-- 타이틀 -->
+            <div class="title">
+                <h2>About Service<span>!</span></h2>
+                <p>아카데미에서 제공하는 <br class="mo"> 다양한 교육 컨텐츠를 소개합니다.</p>
+            </div>
+
+
+            <ul class="service-list">
+                <li>
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="img/service01.jpg" alt="">
+                        </div>
+                        <div class="card-info">
+                            <h2>웹 디자인 입문</h2>
+                            <p>OOO 강사</p>
+                            <div class="star-box">
+                                <img src="img/star1.png" alt="평점">
+                                <img src="img/star1.png" alt="평점">
+                                <img src="img/star1.png" alt="평점">
+                                <img src="img/star1.png" alt="평점">
+                                <img src="img/star2.png" alt="평점">
+                                <span>(100)</span>
+                            </div>
+                            <a href="#" class="btn">자세히 보기</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="img/service02.jpg" alt="">
+                        </div>
+                        <div class="card-info">
+                            <h2>웹 디자인 입문</h2>
+                            <p>OOO 강사</p>
+                            <div class="star-box">
+                                <img src="img/star1.png" alt="평점">
+                                <img src="img/star1.png" alt="평점">
+                                <img src="img/star1.png" alt="평점">
+                                <img src="img/star1.png" alt="평점">
+                                <img src="img/star2.png" alt="평점">
+                                <span>(100)</span>
+                            </div>
+                            <a href="#" class="btn">자세히 보기</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="img/service03.jpg" alt="">
+                        </div>
+                        <div class="card-info">
+                            <h2>웹 디자인 입문</h2>
+                            <p>OOO 강사</p>
+                            <div class="star-box">
+                                <img src="img/star1.png" alt="평점">
+                                <img src="img/star1.png" alt="평점">
+                                <img src="img/star1.png" alt="평점">
+                                <img src="img/star1.png" alt="평점">
+                                <img src="img/star2.png" alt="평점">
+                                <span>(100)</span>
+                            </div>
+                            <a href="#" class="btn">자세히 보기</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="img/service04.jpg" alt="">
+                        </div>
+                        <div class="card-info">
+                            <h2>웹 디자인 입문</h2>
+                            <p>OOO 강사</p>
+                            <div class="star-box">
+                                <img src="img/star1.png" alt="평점">
+                                <img src="img/star1.png" alt="평점">
+                                <img src="img/star1.png" alt="평점">
+                                <img src="img/star1.png" alt="평점">
+                                <img src="img/star2.png" alt="평점">
+                                <span>(100)</span>
+                            </div>
+                            <a href="#" class="btn">자세히 보기</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="img/service05.jpg" alt="">
+                        </div>
+                        <div class="card-info">
+                            <h2>웹 디자인 입문</h2>
+                            <p>OOO 강사</p>
+                            <div class="star-box">
+                                <img src="img/star1.png" alt="평점">
+                                <img src="img/star1.png" alt="평점">
+                                <img src="img/star1.png" alt="평점">
+                                <img src="img/star1.png" alt="평점">
+                                <img src="img/star2.png" alt="평점">
+                                <span>(100)</span>
+                            </div>
+                            <a href="#" class="btn">자세히 보기</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="img/service01.jpg" alt="">
+                        </div>
+                        <div class="card-info">
+                            <h2>웹 디자인 입문</h2>
+                            <p>OOO 강사</p>
+                            <div class="star-box">
+                                <img src="img/star1.png" alt="평점">
+                                <img src="img/star1.png" alt="평점">
+                                <img src="img/star1.png" alt="평점">
+                                <img src="img/star1.png" alt="평점">
+                                <img src="img/star2.png" alt="평점">
+                                <span>(100)</span>
+                            </div>
+                            <a href="#" class="btn">자세히 보기</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="img/service02.jpg" alt="">
+                        </div>
+                        <div class="card-info">
+                            <h2>웹 디자인 입문</h2>
+                            <p>OOO 강사</p>
+                            <div class="star-box">
+                                <img src="img/star1.png" alt="평점">
+                                <img src="img/star1.png" alt="평점">
+                                <img src="img/star1.png" alt="평점">
+                                <img src="img/star1.png" alt="평점">
+                                <img src="img/star2.png" alt="평점">
+                                <span>(100)</span>
+                            </div>
+                            <a href="#" class="btn">자세히 보기</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="img/service03.jpg" alt="">
+                        </div>
+                        <div class="card-info">
+                            <h2>웹 디자인 입문</h2>
+                            <p>OOO 강사</p>
+                            <div class="star-box">
+                                <img src="img/star1.png" alt="평점">
+                                <img src="img/star1.png" alt="평점">
+                                <img src="img/star1.png" alt="평점">
+                                <img src="img/star1.png" alt="평점">
+                                <img src="img/star2.png" alt="평점">
+                                <span>(100)</span>
+                            </div>
+                            <a href="#" class="btn">자세히 보기</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="img/service04.jpg" alt="">
+                        </div>
+                        <div class="card-info">
+                            <h2>웹 디자인 입문</h2>
+                            <p>OOO 강사</p>
+                            <div class="star-box">
+                                <img src="img/star1.png" alt="평점">
+                                <img src="img/star1.png" alt="평점">
+                                <img src="img/star1.png" alt="평점">
+                                <img src="img/star1.png" alt="평점">
+                                <img src="img/star2.png" alt="평점">
+                                <span>(100)</span>
+                            </div>
+                            <a href="#" class="btn">자세히 보기</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="img/service05.jpg" alt="">
+                        </div>
+                        <div class="card-info">
+                            <h2>웹 디자인 입문</h2>
+                            <p>OOO 강사</p>
+                            <div class="star-box">
+                                <img src="img/star1.png" alt="평점">
+                                <img src="img/star1.png" alt="평점">
+                                <img src="img/star1.png" alt="평점">
+                                <img src="img/star1.png" alt="평점">
+                                <img src="img/star2.png" alt="평점">
+                                <span>(100)</span>
+                            </div>
+                            <a href="#" class="btn">자세히 보기</a>
+                        </div>
+                    </div>
+                </li>
+               
+            </ul>
+        </section>
+
+
+        <!-- 푸터 -->
+        <footer>
+            <div class="inner">
+                <h2 class="footer-logo">
+                    <a href="https://sbsart.com">
+                        <img src="img/logo.png" alt="로고">
+                    </a>
+                </h2>
+                <ul class="address">
+                    <li>01695 서울특별시 노원구 노해로83길 21</li>
+                    <li>Copyright 2021.</li>
+                </ul>
+                <ul class="list">
+                    <li><a href="#">온라인 구매시스템</a></li>
+                    <li><a href="#">고객문의</a></li>
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">FAMILY SITE</a></li>
+                </ul>
+            </div>
+        </footer>
+
+
+    </div>
+</body>
+</html>

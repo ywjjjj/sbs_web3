@@ -33,20 +33,35 @@ wrap {}
 .header .info {height: 80px; /* border: 1px solid black; */}
 /* .header .info h1 {width: 20%; height: 100%; border: 1px solid black;} */
 .header .info h1 {visibility: hidden;}
-.header .info .gnb li {
-    display: block; float: left; margin-right: 30px; text-align: center;
+.header .info .gnb>li {
+    display: block;
+    text-align: center;
+    position: relative;
+    top: 15px;
+    width: 140px;
 }
-.header .info .gnb > li:last-child {
-    margin-right: 15px;
-}
+.header .info .gnb>li:nth-of-type(2) {margin-right: 20px;}
+.header .info .gnb>li:nth-of-type(3) {margin-right: 45px;}
+/* .header .info .gnb > li:last-child {
+    margin-left: 15px;
+} */
 
-.gnb li .sub{width: 80px;}
+/* .gnb li .sub{width: 100px;} */
 .gnb li .submenu {display: none;}
+.gnb {
+    display: flex;
+    flex-direction: row;
+    top: 25px;
+    position: relative;
+    height: 100px;
+}
 .gnb li:hover .submenu {
-    display: flex; flex-direction: column; position: absolute;
-    top: 140px; text-align: center;
+    display: block;
+    /* position: relative; */
+    top: 140px;
     text-align: center;
     line-height: 2;
+    color: rgba(0,0,0,0.75);
 }
 
 /* 섹션 */
@@ -153,7 +168,7 @@ section .section-cate .inner span {
 section.etc {}
 section.etc .box {
     /* position: relative; */
-    margin-top: 140px;
+    margin-top: 130px;
     height: 185px;
     /* border: 1px solid black; */
 }
@@ -235,6 +250,10 @@ footer .box .col ul {height: 100%;} */
     section.visual .inner-box .title-content {width: 100%;}
     section.visual .inner-box .main-img {width: 100%;}
 
+    section.visual .inner {
+        background-position-y: 0;
+    }
+
     /* 카테고리 */
     section .section-cate .inner span {
         padding: 10px 25px;
@@ -275,5 +294,27 @@ footer .box .col ul {height: 100%;} */
     /* 섹션: 상품목록 - 2개 */
     .product-list {width: 100%;}
     .product-list .card {width: calc(94%/1); margin-left: 3.5%;}
+
+    section.visual .inner {
+        background: url(../img/Jo-Malone-‘English-Pear-Freesia-Cologne-Review-perfume-cologne-2021.jpg) no-repeat;
+        background-size: 100vw;
+        /* background-position-y: -55px; */
+        height: 300px;
+    }
+
+}
+
+
+
+@media screen and (min-width: 599px) and (max-width: 680px) {
+    section.visual .inner {
+        background-size: auto 100%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    section.visual .inner {
+        background-size: auto 100%;
+    }
 }
 
